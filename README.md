@@ -98,7 +98,7 @@ I chose the following development tasks:
 | Add Lombok                                     | 15 min      |
 | Create runnable Docker image                   | 10 min      |
 | Add OpenApi documentation                      | 10 min      |
-| Create Data Model (Doctor)                     | 1 hour      |
+| Create Data Model (Doctor)                     | 30 min      |
 | Create CRUD-based Controller (DoctorController)| 3 hours     |
 | Create one JPA repository for connecting to database | 5 min    |
-| **Total Time**                                 |**~4.7 hours**|
+| **Total Time**                                 |**~4.5 hours**|
