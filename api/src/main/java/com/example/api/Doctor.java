@@ -13,7 +13,7 @@ import lombok.Setter;
 @Table(name = "doctors")
 @Getter
 @Setter
-class Doctor {
+public class Doctor {
     @Id 
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "doctor_SEQ") 
     @Column(name = "doctor_id") 
