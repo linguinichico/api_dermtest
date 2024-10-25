@@ -22,8 +22,6 @@ class DoctorController {
     DoctorController(DoctorRepository doctorRepository){
         this.doctorRepository = doctorRepository;
     }
-    
-    // GET doctors
 
     @Operation(summary = "Get all doctors")
     @GetMapping("/doctors")
@@ -37,14 +35,12 @@ class DoctorController {
         return new ResponseEntity<>(doctors, HttpStatus.OK);
     }
 
-    // POST doctor 
     @Operation(summary = "Post doctor")
     @PostMapping("/doctors")
     public ResponseEntity<Doctor> newDoctor(@RequestBody Doctor newDoctor) {
         return new ResponseEntity<>(doctorRepository.save(newDoctor),HttpStatus.OK);
     }
 
-    // GET doctor by id
     @Operation(summary = "Get doctor by id")
     @GetMapping("/doctors/{id}")
     public ResponseEntity<Doctor>getDoctorByID(@PathVariable Long id) {
@@ -54,7 +50,6 @@ class DoctorController {
         return new ResponseEntity<>(doctor,HttpStatus.OK);
     }
 
-    // PUT doctor new information by id
     @Operation(summary = "Put new information about a doctor by his id")
     @PutMapping("/doctors/{id}")
     public ResponseEntity<Doctor> replaceDoctorById(@RequestBody Doctor newDoctor, @PathVariable Long id) {
@@ -70,7 +65,6 @@ class DoctorController {
             }), HttpStatus.OK);
     }
 
-    // DELETE doctor by id
     @Operation(summary = "Delete a doctor by id")
     @DeleteMapping("/doctors/{id}")
     public ResponseEntity<HttpStatus> deleteDoctorById(@PathVariable Long id) {
@@ -78,7 +72,6 @@ class DoctorController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    // DELETE all doctors
     @Operation(summary = "Delete all doctors")
     @DeleteMapping("/doctors")
     public ResponseEntity<HttpStatus> deleteAllDoctors() {
