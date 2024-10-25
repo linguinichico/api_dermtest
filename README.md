@@ -52,7 +52,7 @@ I chose the following configuration tasks:
   ```
 
 - **[Task 2: Add Lombok (2 min)]**  
-  Integrated Lombok adding the correspondent dependency into `pom.xml` file, although I didn't use the functionality provided by the library.
+  Integrated Lombok adding the correspondent dependency into `pom.xml` file and used `@Getter` and `@Setter` in `Doctor` class.
      ```xml
   <dependency>
     <groupId>org.projectlombok</groupId>
@@ -95,10 +95,10 @@ I chose the following development tasks:
 | Task                                           | Time Taken  |
 |------------------------------------------------|-------------|
 | Add file-based database                        | 10 min      |
-| Add Lombok                                     | 5 min       |
+| Add Lombok                                     | 15 min      |
 | Create runnable Docker image                   | 10 min      |
 | Add OpenApi documentation                      | 10 min      |
 | Create Data Model (Doctor)                     | 1 hour      |
 | Create CRUD-based Controller (DoctorController)| 3 hours     |
 | Create one JPA repository for connecting to database | 5 min    |
-| **Total Time**                                 |**~4.5 hours**|
+| **Total Time**                                 |**~4.7 hours**|
